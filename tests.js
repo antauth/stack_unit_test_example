@@ -6,7 +6,6 @@ QUnit.test("initialize object", function(assert) {
 QUnit.module("push", {
 	beforeEach: function() {
 		this.stack = new Stack();
-		console.log(this.stack);
 	}
 });
 
