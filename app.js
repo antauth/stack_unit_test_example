@@ -12,7 +12,10 @@
  	 * @param an element
  	 */
  	this.push = function(element) {
- 		return null;
+ 		if (element == null) {
+ 			throw "Elements cannot be null";
+ 		}
+ 		elements.push(element);
  	}
  	/**
  	 * Removes top item from stack.

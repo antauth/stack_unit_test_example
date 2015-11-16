@@ -9,6 +9,10 @@ QUnit.module("push", {
 	}
 });
 
+QUnit.test("Can add element to stack", function(assert) {
+	assert.equal(this.stack.push("first"), undefined, "element added without error");
+});
+
 QUnit.test("Can add one item to stack", function(assert) {
 	this.stack.push("first");
 	assert.equal(this.stack.size(), 1, "stack has one element");
