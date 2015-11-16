@@ -30,3 +30,18 @@ QUnit.test("Can add three items to stack", function(assert) {
 	this.stack.push("third");
 	assert.equal(this.stack.size(), 3, "stack has three elements");
 });
+
+QUnit.module("size", {
+	beforeEach: function() {
+		this.stack = new Stack();
+	}
+});
+
+QUnit.test("Returns correct size", function(assert) {
+	this.stack.push("first");
+	assert.equal(this.stack.size(), 1, "stack has one element");
+
+	this.stack.push("second");
+	this.stack.push("third");
+	assert.equal(this.stack.size(), 3, "stack has three elements");
+});

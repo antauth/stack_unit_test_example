@@ -56,6 +56,6 @@
  	 * @return number of elements in stack
  	 */
  	this.size = function() {
- 		return null;
+ 		return elements.length;
  	}
  }
