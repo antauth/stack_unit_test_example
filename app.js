@@ -10,6 +10,7 @@
  	 * Adds one element to top of stack.
  	 *
  	 * @param an element
+ 	 * @throws exception if provided null value
  	 */
  	this.push = function(element) {
  		if (element == null) {
