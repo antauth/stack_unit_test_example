@@ -7,9 +7,9 @@
  	var elements = [];
 
  	/**
- 	 * Adds one or more elements to top of stack.
+ 	 * Adds one element to top of stack.
  	 *
- 	 * @param {*} an array of elements
+ 	 * @param an element
  	 */
  	this.push = function(element) {
  		return null;
